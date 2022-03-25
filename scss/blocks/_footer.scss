@@ -1,0 +1,51 @@
+.footer {
+  background-color: $miraga-blue;
+  background-image: url("../img/bg-img-hero.png");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% - -710px) -130px;
+}
+
+.footer__inner {
+  padding: 31px 0px;
+  @include flex(center, space-between);
+}
+
+.footer__box {
+  max-width: 432px;
+  @include flex(center, space-between);
+}
+
+.footer-link {
+  color: $water-white;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $charm-pink;
+    opacity: 1;
+  }
+  &:active {
+    color: $water-white;
+    opacity: 1;
+  }
+}
+
+.footer__socialmedia-list {
+  @include list-nostyle;
+  @include flex(center, space-between);
+}
+
+.footer__socialmedia-item ~ .footer__socialmedia-item {
+  margin-left: 24px;
+}
+
+.footer__socialmedia-link {
+  display: inline-block;
+}
+
+.footer__socialmedia-img {
+  display: block;
+}
+
+.footer__socialmedia-img:hover path {
+  fill: $charm-pink;
+}
