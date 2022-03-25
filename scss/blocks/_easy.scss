@@ -1,0 +1,30 @@
+.easy__inner {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  @include flex(center, space-between);
+}
+
+.easy__img {
+  width: 604px;
+  height: 444px;
+}
+
+.easy__content {
+  max-width: 445px;
+}
+
+.easy__heading {
+  margin-bottom: 24px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: $sj-blue;
+}
+
+.easy__text {
+  font-size: 15px;
+  line-height: 28px;
+  color: $light-sj-blue;
+}
