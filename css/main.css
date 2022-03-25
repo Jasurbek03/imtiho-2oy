@@ -777,7 +777,7 @@ button {
 
 .easy__inner {
   margin-top: 100px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,12 +818,12 @@ button {
   background-image: url("../../img/bg-img-hero.png");
   background-repeat: no-repeat;
   background-size: 780px 780px;
-  background-position: calc(50% - -824px) -86px;
+  background-position: calc(50% - -824px) 14px;
   position: relative;
+  padding: 100px;
 }
 
 .simple__inner {
-  margin-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,4 +881,76 @@ button {
   left: 300px;
   width: 419px;
   height: 660px;
+}
+
+.opportunities__inner {
+  margin-bottom: 96px;
+}
+
+.opportunities__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opportunities__item {
+  max-width: 350px;
+  text-align: center;
+}
+
+.opport--first::before {
+  margin-bottom: 32px;
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("../../img/finances.png");
+  background-repeat: no-repeat;
+  background-size: 106px 106px;
+  content: "";
+}
+
+.opportunities__heading {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.138462px;
+  color: #36536b;
+}
+
+.opportunities__text {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #6c8294;
+}
+
+.opport--second::before {
+  margin-bottom: 32px;
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("../../img/banking.png");
+  background-repeat: no-repeat;
+  background-size: 106px 106px;
+  content: "";
+}
+
+.opport--third::before {
+  margin-bottom: 32px;
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("../../img/card.png");
+  background-repeat: no-repeat;
+  background-size: 106px 106px;
+  content: "";
 }

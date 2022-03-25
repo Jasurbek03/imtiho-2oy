@@ -1,0 +1,62 @@
+.opportunities__inner {
+  margin-bottom: 96px;
+}
+
+.opportunities__list {
+  @include list-nostyle;
+  @include flex(center, space-between);
+}
+
+.opportunities__item {
+  max-width: 350px;
+  text-align: center;
+}
+
+.opport--first::before {
+  margin-bottom: 32px;
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("../../img/finances.png");
+  background-repeat: no-repeat;
+  background-size: 106px 106px;
+  content: "";
+}
+
+.opportunities__heading {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.138462px;
+  color: $sj-blue;
+}
+
+.opportunities__text {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: $light-sj-blue;
+}
+
+
+.opport--second::before {
+  margin-bottom: 32px;
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("../../img/banking.png");
+  background-repeat: no-repeat;
+  background-size: 106px 106px;
+  content: "";
+}
+
+.opport--third::before {
+  margin-bottom: 32px;
+  display: inline-block;
+  width: 106px;
+  height: 106px;
+  background-image: url("../../img/card.png");
+  background-repeat: no-repeat;
+  background-size: 106px 106px;
+  content: "";
+}

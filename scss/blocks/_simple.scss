@@ -2,12 +2,12 @@
   background-image: url("../../img/bg-img-hero.png");
   background-repeat: no-repeat;
   background-size: 780px 780px;
-  background-position: calc(50% - -824px) -86px;
+  background-position: calc(50% - -824px) 14px;
   position: relative;
+  padding: 100px;
 }
 
 .simple__inner {
-  margin-bottom: 100px;
   @include flex(center, flex-start);
 }
 
