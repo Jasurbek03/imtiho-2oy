@@ -109,3 +109,40 @@
   width: 137px;
   height: 26px;
 }
+
+@include breakpoint-down(950px) {
+  .about {
+    background-position: calc(50% - -3px) -541px;
+  }
+
+  .about__inner {
+    flex-direction: column-reverse;
+    padding: 0;
+    padding: 88px 0;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+}
+
+@include breakpoint-down(515px) {
+  .about {
+    background-position: calc(50% - 6px) -568px;
+  }
+
+  .about__heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  .about__item {
+    width: 170px;
+  }
+}
+
+@include breakpoint-down(390px) {
+  .about__item {
+    max-width: 145px;
+  }
+}

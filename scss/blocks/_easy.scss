@@ -28,3 +28,52 @@
   line-height: 28px;
   color: $light-sj-blue;
 }
+
+@include breakpoint-down(950px) {
+  .easy__inner {
+    flex-direction: column;
+  }
+
+  .easy__content {
+    max-width: 700px;
+    text-align: center;
+
+  }
+}
+
+@include breakpoint-down(768px) {
+  .easy__inner {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .easy__img {
+    width: 552px;
+    height: 410px;
+  }
+
+  .easy__content {
+    max-width: 700px;
+    text-align: center;
+
+  }
+}
+
+@include breakpoint-down(500px) {
+  .easy__img {
+    width: 450px;
+    height: 320px;
+  }
+
+  .easy__heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@include breakpoint-down(400px) {
+  .easy__img {
+    width: 350px;
+    height: 240px;
+  }
+}

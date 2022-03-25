@@ -12,3 +12,14 @@
   letter-spacing: -0.369231px;
   color: $sj-blue;
 }
+
+@include breakpoint-down(790px) {
+  .ready__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ready__heading {
+    margin-bottom: 40px;
+  } 
+}

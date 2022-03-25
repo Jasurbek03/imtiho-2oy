@@ -49,3 +49,40 @@
 .footer__socialmedia-img:hover path {
   fill: $charm-pink;
 }
+
+
+@include breakpoint-down(595px) {
+  .footer-nav {
+    display: block;
+  }
+}
+
+@include breakpoint-down(555px) {
+  .footer {
+    background-position: calc(50% - 0px) 186px;
+  }
+
+  .footer__inner {
+    padding-top: 41px;
+    padding-bottom: 55px;
+    flex-direction: column;
+  }
+
+  .footer__box {
+    flex-direction: column;
+  }
+
+  .footer-nav {
+    margin: 40px 0;
+  }
+
+  .footer-nav-list {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .nav__item ~ .nav__item{
+    margin: 0;
+    margin-top: 31px;
+  }
+}

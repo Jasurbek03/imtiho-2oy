@@ -22,3 +22,19 @@
     opacity: 1;
   }
 }
+
+@include breakpoint-down(650px) {
+  .nav {
+    margin-left: 50px;
+  }
+
+  .nav__item ~ .nav__item {
+    margin-left: 20px;
+  }
+}
+
+@include breakpoint-down(595px) {
+  .nav {
+    display: none;
+  }
+}

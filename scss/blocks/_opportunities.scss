@@ -60,3 +60,35 @@
   background-size: 106px 106px;
   content: "";
 }
+
+@include breakpoint-down(1070px) {
+  .opportunities__item {
+    max-width: 300px;
+  }
+}
+
+@include breakpoint-down(970px) {
+  .opportunities__item {
+    max-width: 250px;
+  }
+}
+
+@include breakpoint-down(800px) {
+  .opportunities__item {
+    max-width: 223px;
+  }
+}
+
+@include breakpoint-down(720px) {
+  .opportunities__list {
+    flex-direction: column;
+  }
+
+  .opportunities__item ~ .opportunities__item {
+    margin-top: 48px;
+  }
+
+  .opportunities__item {
+    max-width: 500px;
+  }
+}

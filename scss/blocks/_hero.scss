@@ -68,3 +68,46 @@
 .site__form-label--span {
   font-weight: 700;
 }
+
+@include breakpoint-down(891px) {
+  .hero__heading {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@include breakpoint-down(865px) {
+  .hero__inner {
+    flex-direction: column-reverse;
+  }
+
+  .hero__content {
+    margin-bottom: 99px;
+  }
+}
+
+@include breakpoint-down(532px) {
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .site__form {
+    flex-direction: column;
+    background-color: transparent;
+  }
+
+  .site__form-input {
+    margin-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 445px;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    background-color: $water-white;
+  }
+}
