@@ -1,0 +1,24 @@
+.nav {
+  margin-left: 64px;
+}
+
+.nav__list {
+  @include flex(center, space-between);
+  @include list-nostyle;
+}
+
+.nav__item ~ .nav__item {
+  margin-left: 40px;
+}
+
+.nav__link {
+  @include linkStyle(none, 15px, 18px, $sj-blue);
+  font-weight: 700;
+  opacity: 0.7;
+  &:hover {
+    opacity: 0.4;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
